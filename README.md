@@ -59,3 +59,18 @@ LIKE 'M%';`
 7. Obtener el presupuesto total de todos los departamentos.
 
 `SELECT SUM(presupuesto_departamento) AS presupuesto_total FROM Departamento;`
+
+![consulta6](img/Consulta7.jpg "consulta6")
+
+
+
+
+
+
+
+
+## Clausula inner join
+![Inner Join](img/INNER%20JOIN.png "inner join")
+
+## Clausula Subconsultas
+![Subconsultas](img/Subconsultas.png "subconsultas")
