@@ -30,5 +30,32 @@ trabajo de consulta sql, relacionado con los datos de una empresa
 
 ## consulta 3 
 
-3. 
+3. Obtener todos los datos de los empleados que se apellidan 'Gomez'.
 
+`SELECT * FROM Empleado WHERE apellidos_empleado = 'GOMEZ';`
+
+
+![consulta3](img/Consulta3.jpg "consulta3")
+
+4. Obtener todos los datos de los empleados que se apellidan "Diaz" y los que se apellidan "Rodriguez".  Usar OR o IN
+
+`SELECT * FROM Empleado WHERE apellidos_empleado = "DIAZ" or "RODRIGUEZ";`
+
+![consulta4](img/consulta4.jpg "consulta4")
+
+5. Obtener los nombres de los empleados que trabajan en el departamento 11
+
+`SELECT nombre_empleado FROM Empleado WHERE id_departamento = 11;`
+
+![consulta5](img/Consultas5.jpg "consulta5")
+
+6. Obtener todos los datos de los empleados cuyo apellido empiece por 'M'
+ 
+`SELECT * FROM Empleado WHERE apellidos_empleado 
+LIKE 'M%';`
+
+![consulta6](img/consulta6.jpg "consulta6")
+
+7. Obtener el presupuesto total de todos los departamentos.
+
+`SELECT SUM(presupuesto_departamento) AS presupuesto_total FROM Departamento;`
